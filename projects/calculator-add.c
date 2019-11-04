@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int main(){
-   int a ,s;
+   int a, s;
 
-   printf("Add two numbers\n");
+   printf("Add two numbers: \n");
    scanf("%d \n", &a);
    scanf("%d \n", &s);
 
