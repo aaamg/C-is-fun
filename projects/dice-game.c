@@ -5,11 +5,20 @@
 #include <math.h>
 
 int i;
+
 int userRoll;
 int computerRoll;
+
+int test1;
+int test2;
+int test3;
+int test4;
+
 int rounds;
+
 int userTotal;
 int computerTotal;
+
 int test;
 
 int main(){
@@ -17,22 +26,35 @@ int main(){
     printf("How many rounds? \n");
     scanf("%d", &rounds);
 
+
+
 //Random dice rolls
     printf("\nYour rolls: \n");
     for(i=0; i < rounds; i++){
         userRoll = (rand() % 6) + 1;
+        test1 += userRoll;
         printf("%d \n", userRoll);
+        //printf("tst1: %d \n", test1);
         }
 
     printf("\nComputers Rolls: rolls: \n");
     for(i=0; i < rounds; i++){
         computerRoll = (rand() % 6) + 1;
+        test2 += computerRoll;
         printf("%d \n", computerRoll);
+        //printf("tst2: %d \n", test2);
         }
 
+//Test--dont need prints when it works
+        userTotal = test1;
+        computerTotal = test2;
+        //printf("\n\nMe %d \n", userTotal);W
+        //printf("PC %d \n", computerTotal);
+
+
 //Totaling the dice rolls
-    userTotal = userRoll;
-    computerTotal = computerRoll;
+    //userTotal = userRoll;
+    //computerTotal = computerRoll;
 
 //Printing out winner statement
     if(userTotal > computerTotal){
